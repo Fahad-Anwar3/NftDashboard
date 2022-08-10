@@ -1,38 +1,171 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  background-color: transparent;
+  z-index: 9;
+  position: relative;
+}
+
+/* Styling for connect waller buttons */
+.btnConnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(243,137,117);
+  background: linear-gradient(108deg, rgba(243,137,117,1) 0%, rgba(200,0,228,1) 95%, rgba(198,0,233,1) 100%); 
+  border-radius: 25px;
+  width: 168px;
+  height: 48px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btnConnect2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(243,137,117);
+  background: linear-gradient(108deg, rgba(243,137,117,1) 0%, rgba(200,0,228,1) 95%, rgba(198,0,233,1) 100%); 
+  border-radius: 25px;
+  width: 60%;
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.5em;
+  margin: 1% 0 3% 0;
+  z-index: 1;
+}
+
+.btnSeeMore {
+  text-decoration: none;
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 1em;
+  margin-top: 1%; 
+  z-index: 1;
+}
+
+/* styling for logo and text logo */
+
+.navText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* styling for home page */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  top: 0;
+  background: rgb(15,12,86);
+  background: radial-gradient(circle, rgba(15,12,86,1) 34%, rgba(10,7,73,1) 100%); 
+  margin: 0;
+}
+
+.nftTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36rem;
+  font-weight: 500;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #b759b9;
+  opacity: 0.3;
+  /* later add the fallback for -webkit */
+    /* color: rgba(0, 0, 0, 0);
+  text-shadow:
+   -3px -3px 0 #b759b9,  
+    3px -3px 0 #b759b9,
+    -3px 3px 0 #b759b9,
+     3px 3px 0 #b759b9; */
+}
+
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Styling for table starts */
+
+.tableContiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  overflow-y: scroll;
+  padding: 0 2%;
+  border-radius: 30px;
+  background: rgb(203,126,131);
+  background: -moz-linear-gradient(180deg, rgba(203,126,131,1) 0%, rgba(8,5,66,0.5) 68%);
+  background: -webkit-linear-gradient(180deg, rgba(203,126,131,1) 0%, rgba(8,5,66,0.5) 68%);
+  background: linear-gradient(180deg, rgba(203,126,131,1) 0%, rgba(8,5,66,0.5) 68%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cb7e83",endColorstr="#080542",GradientType=1); 
+
+}
+
+.dataTable {
+  width: 100%;  
+  border-collapse: separate;
+  border-spacing: 0 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th {
+  font-family: "Roboto";
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row > td {
+  padding: 0.5em 0;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+/* dashboard styling starts */
+.dashboardContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #06033e;
+  height: 100%;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboardContent {
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboardHeading {
+  margin: 0;
+  font-family: "Roboto";
+  color: #fff;
+  text-align: center;
 }
